@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Steps/Step2/Unititled.unity
     guid: 9674de3332b293443862a2a959d8176f
+  - enabled: 1
+    path: Assets/Steps/Step7/Scenes/Unititled 1.unity
+    guid: 619ca48c7fc25234d8c3cd1c9193721e
   m_configObjects: {}
