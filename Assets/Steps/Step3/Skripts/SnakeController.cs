@@ -16,6 +16,7 @@ public class SnakeController : MonoBehaviour
     public float Speed;
 
     public UnityEvent OnEat;
+    public UnityEvent OnBlock;
 
     private void Start()
     {
@@ -63,6 +64,15 @@ public class SnakeController : MonoBehaviour
             if(OnEat != null)
             {
                 OnEat.Invoke();
+            }
+        }
+
+        if (collision.gameObject.tag == "Block")
+        {
+
+            if (OnBlock != null)
+            {
+                OnBlock.Invoke();
             }
         }
     }
