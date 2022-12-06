@@ -80,9 +80,9 @@ public class SnakeController : MonoBehaviour
             }
 
 
-            if (count++ > 11)
+            if (count++ > 12)
             {
-                SceneManager.LoadScene(0);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); ;
             }
         }
 

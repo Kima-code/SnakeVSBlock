@@ -289,9 +289,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2128722378}
-        m_TargetAssemblyTypeName: Exit, Assembly-CSharp
-        m_MethodName: RestartLevel
+      - m_Target: {fileID: 2128722379}
+        m_TargetAssemblyTypeName: GoMenu, Assembly-CSharp
+        m_MethodName: GoToMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1016,7 +1016,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Reload
+  m_Text: Restart
 --- !u!222 &1852364940
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1244,6 +1244,7 @@ GameObject:
   - component: {fileID: 2128722376}
   - component: {fileID: 2128722377}
   - component: {fileID: 2128722378}
+  - component: {fileID: 2128722379}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1367,5 +1368,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 35e05e261b1471e43bcaf8c39ca2ae6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2128722379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128722371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee9fad21b12db604c8e556f9e2ea4b1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

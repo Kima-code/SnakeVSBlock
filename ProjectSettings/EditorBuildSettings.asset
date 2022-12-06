@@ -19,5 +19,20 @@ EditorBuildSettings:
     guid: 371df1f0b4bd20b4aa08e681d094feab
   - enabled: 1
     path: Assets/Scenes/Unititled 1.unity
-    guid: 619ca48c7fc25234d8c3cd1c9193721e
+    guid: 71464535c68baa647a2cb5123b9dbd7c
+  - enabled: 1
+    path: Assets/Scenes/YouWonTwo.unity
+    guid: 7dcd237e3f10f074ebf31a923e506612
+  - enabled: 1
+    path: Assets/Scenes/Unititled 2.unity
+    guid: a650e7cb8a76e7c49a7774ff1895204c
+  - enabled: 1
+    path: Assets/Scenes/WonFinish.unity
+    guid: 59c160ebfdd3211439c14c2f9bb74948
+  - enabled: 1
+    path: Assets/Scenes/GameOverTwo.unity
+    guid: 094b4eddf8e31a547a12d4bdd01cb662
+  - enabled: 1
+    path: Assets/Scenes/GameOverThree.unity
+    guid: 57b2fbcee67b12f4dbc92785e8f25ce7
   m_configObjects: {}
