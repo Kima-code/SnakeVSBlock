@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SnakeController : MonoBehaviour
 {
@@ -18,9 +20,16 @@ public class SnakeController : MonoBehaviour
     public UnityEvent OnEat;
     public UnityEvent OnBlock;
 
+    int count = 0;
+    public Text countText;
+
+
     private void Start()
     {
         _transform = GetComponent<Transform>();
+
+        count = 0;
+        countText.text = "Score  " + count.ToString();
     }
 
     private void Update()
@@ -61,9 +70,19 @@ public class SnakeController : MonoBehaviour
             var bone = Instantiate(BonePrafab);
             Tails.Add(bone.transform);
 
-            if(OnEat != null)
+            count++;
+            countText.text = "Score" + count.ToString();
+
+
+            if (OnEat != null)
             {
                 OnEat.Invoke();
+            }
+
+
+            if (count++ > 11)
+            {
+                SceneManager.LoadScene(0);
             }
         }
 
